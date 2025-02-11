@@ -1,0 +1,1 @@
+select zip_distance('74571','79701');

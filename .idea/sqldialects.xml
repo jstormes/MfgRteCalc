@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="SqlDialectMappings">
+    <file url="file://$PROJECT_DIR$/initdb.d/0000_create_business.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/initdb.d/0100_zip_geocode_table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/initdb.d/0101_us_address_table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/initdb.d/0101_us_distance_cache_table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/initdb.d/0102_us_plant_list_table.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/test/Hand Queries/Distance_Order_Test.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/test/Hand Queries/zip_distance.sql" dialect="MariaDB" />
+    <file url="file://$PROJECT_DIR$/test/Hand Queries/zip_not_found_test.sql" dialect="MariaDB" />
+  </component>
+</project>

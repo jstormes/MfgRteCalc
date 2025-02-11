@@ -1,0 +1,11 @@
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (1, 'John Smith', '1676 Eagle Lane', 'Midland', 'TX', '79701', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (2, 'Kevin Smart', '1248 Flower Lane', 'Auburndale', 'FL', '33823', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (3, 'Chicago Receiving', '123 Any Street', 'Chicago', 'IL', '60629', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (4, 'El Paso Receiving', '4356 That Street', 'El Paso', 'TX', '79936', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (5, 'Los Angeles Receiving', '3487 Main Street', 'Los Angeles', 'CA', '90011', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (6, 'Ridgewood Receiving', '9875 Ridgewood Way', 'Ridgewood', 'NY', '11385', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (7, 'Katy Receiving', '765 Spruce', 'Katy', 'TX', '11385', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (8, 'Lakewood Receiving', '800 Almond Way', 'Lakewood', 'NJ', '08701', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (9, 'Antioch Receiving', '500 Disney Road', 'Antioch', 'TN', '37013', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (10, 'Troy Receiving', '827 Roosevelt ', 'Troy', 'MI', '48084', null);
+INSERT INTO business.us_address (id, address_line_1, address_line_2, city, state, zip, zip_4) VALUES (11, 'Johns Creek Receiving', '600 Ward St', 'Johns Creek', 'GA', '60629', null);

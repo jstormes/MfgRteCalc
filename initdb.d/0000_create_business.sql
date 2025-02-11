@@ -1,0 +1,1 @@
+create schema if not exists business collate utf8mb3_bin;

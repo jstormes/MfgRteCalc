@@ -1,0 +1,50 @@
+############################################################################
+# This section `secrets` is for sharing secret files between the host
+# and Docker containers.  Unlike volumes, secrets can be outside the
+# project's directory structure and have special rules to help prevent them
+# from being included in a Docker image.
+#
+# A common development use case is ssh keys for private git repositories.
+############################################################################
+#secrets:
+#  ssh:
+#    file: ~/.ssh
+#  aws:
+#    file: ~/.aws
+
+
+############################################################################
+# This section `services` is where the "servers" are.  Each service provides
+# a "server".  Common development use cases are web servers, database
+# servers and testing servers.
+#
+# The purpose of each service is to define how the service (aka server)
+# interacts with the host.
+############################################################################
+services:
+
+  ##########################################################################
+  # This section defines a Maria DB server and a PhpMyAdmin server for the
+  # development environment.
+  ##########################################################################
+  mariadb:
+    image: mariadb
+    environment:
+      - TZ=America/Chicago # see https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+      - MYSQL_ROOT_PASSWORD=password
+      - collation-server=utf8mb4_unicode_ci
+      - character-set-server=utf8mb4
+      - MYSQL_DATABASE=business
+    ports:
+      - "5000:3306"
+    volumes:
+      - ./initdb.d:/docker-entrypoint-initdb.d
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    environment:
+      - TZ=America/Chicago
+      - PMA_USER=root
+      - PMA_PASSWORD=password
+      - PMA_HOSTS=mariadb
+    ports:
+      - "7088:80"
