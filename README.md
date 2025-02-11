@@ -47,7 +47,7 @@ This proof of concept will be limited to business inside the US.  While it
 would be possible to do a global version.  For now in the interest of time
 I will only be approaching this assuming US only business.
 
-## Stage one, the MySQL distance calculator
+## Stage one, the MariaDb distance calculator
 
 The acceptance criteria for stage one is that we can create a list of 
 manufacturing plant locations in a table, a list of ship to addresses
@@ -62,9 +62,7 @@ The distance calculator can only calculate distance when the general
 location of the source and destination is known.  In this exercise we will
 use the US zip code to approximate the location to a latitude and longitude.
 We then will use functions built into MySQL to calculate the rough distance
-between the source and destination.  
-
-
+between the source and destination.
 
 To do our calculation we will need to know the latitude and longitude of
 any given zip.  While you would think the US Government would readily supply
@@ -74,9 +72,10 @@ the internet.  This table is known to be incomplete. :(
 
 Per our best practices we will only allow addresses with known zips to be 
 added to our tables.  We will do this via foreign keys.  While many see 
-this as a limitation, I assure you it is not.  It will be up to the API or 
-front end to add the latitude and longitude of the zip if it is not known.  
-There are API for such, but may require payment.
+this as a limitation, I assure you it is not.  The front end that accepts
+and inserts the address will also be responsible for making sure the zip
+has a rough latitude and longitude. There are API for such, but may 
+require payment.
 
 Rough vs exact:  The goal is to return a quick "rough" shipping distance 
 estimate, with the idea that this will correlate to shipping costs.  This
