@@ -168,3 +168,37 @@ physical inventory.  This would be maintained journal entry style.
 Job routing would need to have the asset(s) and inventory at a location to 
 route to it.  Routing would exception break if no usable routing was 
 available, ie we don't have the necessary resources/material/inventory.
+
+# Adding Global Shipping
+
+TBD
+
+# Architecture
+
+## Order
+
+For an "order" structure we will try the Composite deign pattern.
+
+## Product
+
+For "product" structure we will use the Composite deign pattern to represent
+a "product".  https://refactoring.guru/design-patterns/composite
+
+## Routing 
+
+For "routing" we will pass the order though a Chain of Responsibility 
+pattern with each handler updating a routing object attached to the order.
+At the end of the chain if we have any required routing property that is not
+populated we will throw an "unroutable" error to be handled by a human.  The 
+final routing handler should report why the order was unable to route.
+
+"Strategy" might also be a good design pattern fit for this!!!
+
+## Shipping
+
+We need to support Parcel, LTL, FTL and Container
+
+## Material 
+
+## Inventory
+
