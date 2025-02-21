@@ -178,6 +178,7 @@ TBD
 ## Order
 
 For an "order" structure we will try the Composite deign pattern.
+https://refactoring.guru/design-patterns/composite
 
 ## Product
 
@@ -191,8 +192,10 @@ pattern with each handler updating a routing object attached to the order.
 At the end of the chain if we have any required routing property that is not
 populated we will throw an "unroutable" error to be handled by a human.  The 
 final routing handler should report why the order was unable to route.
+https://refactoring.guru/design-patterns/chain-of-responsibility
 
 "Strategy" might also be a good design pattern fit for this!!!
+https://refactoring.guru/design-patterns/strategy
 
 ## Shipping
 
