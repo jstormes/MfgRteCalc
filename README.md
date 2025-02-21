@@ -171,6 +171,8 @@ available, ie we don't have the necessary resources/material/inventory.
 
 # Adding Global Shipping
 
+# Adding Global Manufacturing
+
 TBD
 
 # Architecture
