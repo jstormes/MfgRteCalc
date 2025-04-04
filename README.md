@@ -169,6 +169,9 @@ Job routing would need to have the asset(s) and inventory at a location to
 route to it.  Routing would exception break if no usable routing was 
 available, ie we don't have the necessary resources/material/inventory.
 
+TODO: Create SQL for "special" destination zip codes.  For example 
+Puerto Rico.
+
 # Adding Global Shipping
 
 # Adding Global Manufacturing
@@ -186,6 +189,41 @@ https://refactoring.guru/design-patterns/composite
 
 For "product" structure we will use the Composite deign pattern to represent
 a "product".  https://refactoring.guru/design-patterns/composite
+
+
+## Job 
+
+To create a "product" we create a "Job".  A Job is one or more Steps/Action/Events/Subassemblies.
+These cat be represented as a tree of Steps where when a series of sub-steps are completed the
+parent step is completed.
+
+For example Cutting 4 boards to go into a shelf could have 4 steps to cut each board.  When all
+the boards are cut, the parent step "cut shelves" would be finished.
+
+### What we deliver vs how we make it
+
+How to make this "visible" so that it can be easily understood
+
+https://stackoverflow.com/questions/15000341/how-to-display-a-binary-search-tree-using-css-html-and-a-bit-of-javascript
+
+The "nesting" of parts to make up the whole.  "Nest"  Table?
+
+* Shelf - Plank + Packing materials
+* Table - Planks+Lets + Packing materials
+* Shelves - Planks+Sides+Back + Packing materials
+* Cabinet - Planks+Sides+Back+Doors+Handles+Hinges + Packing materials
+* Dresser - 
+
+
+The "nesting" of steps to make
+
+* Shelf - ...+Packing+Shipping
+* 
+
+The "nesting" of COGs of steps + materials
+
+* Shelf
+
 
 ## Routing 
 
