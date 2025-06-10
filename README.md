@@ -232,8 +232,8 @@ of solving the same issues over and over...
 
 To stop the madness and to scratch an itch, I want to build out a framework
 targeting the manufacturing process.  I have seen several "managers" that 
-think "making X is nothing like making Y".  But having done this from some
-I can say without a doubt, most manufacturing processes are simpler at 
+think "making X is nothing like making Y".  But having done this for some time
+I can say without a doubt, most manufacturing processes are similar at 
 the top level.  Further most manufacturing software misses the same issues
 over and over.
 
