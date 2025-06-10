@@ -225,6 +225,34 @@ The "nesting" of COGs of steps + materials
 * Shelf
 
 
+# MFG as a framework
+
+Having worked in two Manufacturing development roles, I have gotten tired 
+of solving the same issues over and over...
+
+To top the madness and to scratch an itch, I want to build out a framework
+targeting the manufacturing process.  I have seen several "managers" that 
+think "making X is nothing like making Y".  But having done this from some
+I can say without a doubt, most manufacturing processes are simpler at 
+the top level.  Further most manufacturing software misses the same issues
+over and over.
+
+So this will be my take at a universal manufacturing framework.
+
+* Assembly Tracking - Tracking the status and progress from the sub-assembly though to shipping.
+* COGS - Cost of good sold (Are we making any money)
+* Factory Routing - Finding the best factory to build a given product
+* Tooling Routing - Finding the best tool station for a step of assembling a product. (cannot cross factories for now).
+* Mfg History - The history of what happened.  (Job history, Station history, User history))
+* Packing - Preparing the product for shipping.
+* Shipping - The shipping.
+* Reporting - Top level reporting of business status.  (OLAP)
+* User Auth - Authentication and Authorization (OAuth/JWT based)
+* SKU Management - Product management (include a check digit)
+* Factory Management - Tool Station, Factory Availability, TBD
+
+
+
 ## Routing 
 
 For "routing" we will pass the order though a Chain of Responsibility 
