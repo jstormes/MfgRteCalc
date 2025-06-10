@@ -250,6 +250,7 @@ So this will be my take at a universal manufacturing framework.
 * User Auth - Authentication and Authorization (OAuth/JWT based)
 * SKU Management - Product management (include a check digit)
 * Factory Management - Tool Station, Factory Availability, TBD
+* Inventory - Consumables/product on hand
 
 
 
