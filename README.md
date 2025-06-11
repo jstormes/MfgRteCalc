@@ -253,6 +253,7 @@ So this will be my take at a universal manufacturing framework.
 * Inventory - Consumables/product on hand  (May need to keep "inventory" separate from "consumables")
 * Consumables - materials consumed in the manufacturing process.  Must be included in COGS.
 * Outsourced work - Work or assembles done outside the company.
+* Build asset - A tool, skilled person, or machine needed to build a given assembly
 
 
 ## Routing 
