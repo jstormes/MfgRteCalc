@@ -243,7 +243,7 @@ So this will be my take at a universal manufacturing framework.
 * COGS - Cost of good sold (Are we making any money)
 * Factory Routing - Finding the best factory to build a given product
 * Tooling Routing - Finding the best tool station for a step of assembling a product. (cannot cross factories for now).
-* Mfg History - The history of what happened.  (Job history, Station history, User history))
+* Mfg History - The history of what happened.  (Job history, Station history, User history, should be a pivot)
 * Packing - Preparing the product for shipping.
 * Shipping - The shipping.
 * Reporting - Top level reporting of business status.  (OLAP)
