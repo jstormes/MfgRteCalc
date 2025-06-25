@@ -255,7 +255,7 @@ So this will be my take at a universal manufacturing framework.
 * Outsourced work - Work or assembles done outside the company.
 * Build asset - A tool, skilled person, or machine needed to build a given assembly
 * Node/Machine/Device setting - A list of setting the machine at the location should be set to.  Also, must have defaults.
-
+* Show all numberic calculations like tax and shipping.  IE show your work!!!!
 * Drop ship services....
 
 Node setting should be a standard interface supported by the node.
